@@ -21,25 +21,25 @@ class Board extends React.Component {
   }
 
   render() {
+    let rows = [];
+    for (let i = 0; i <= 2; i++) {
+      rows.push(
+        <div className="board-row">
+          {this.getRows(i)}
+        </div>
+      );
+    }
     return (
-      <div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
-      </div>
+      <div>{rows}</div>
     );
+  }
+
+  getRows(i) {
+    let rows = [];
+    for (let j = 0; j <= 2; j++) {
+      rows.push(this.renderSquare(i * 3 + j));
+    }
+    return rows;
   }
 }
 
@@ -88,7 +88,7 @@ class Game extends React.Component {
       const moves = history.map((step, move) => {
           let point = getColumnAndRow(step.lastMove);
           let className = (move === this.state.stepNumber) ? 'current' : '';
-          
+
           const desc = move ?
             'Go to move #' + move + ' (' + point[0] + ', ' + point[1] + ')'  :
             'Go to game start';
