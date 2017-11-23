@@ -1,5 +1,9 @@
 # Intro to React
 
+Follows the [ReactJS tutorial](https://reactjs.org/tutorial/tutorial.html)
+
+## Setup
+
 ```
 $ vagrant ssh
 cd /vagrant
