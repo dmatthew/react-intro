@@ -88,8 +88,7 @@ class Game extends React.Component {
       const moves = history.map((step, move) => {
           let point = getColumnAndRow(step.lastMove);
           let className = (move === this.state.stepNumber) ? 'current' : '';
-          console.log(step);
-          console.log(this.state.stepNumber);
+          
           const desc = move ?
             'Go to move #' + move + ' (' + point[0] + ', ' + point[1] + ')'  :
             'Go to game start';
