@@ -1,6 +1,6 @@
 # Intro to React
 
-Follows the [ReactJS tutorial](https://reactjs.org/tutorial/tutorial.html)
+Some ReactJS applications following online tutorials.
 
 ## Setup
 
@@ -17,4 +17,8 @@ $ npm start
 
 ### /tic-tac-toe
 
-An interactive Tic-Tac-Toe game
+An interactive Tic-Tac-Toe game. Follows the offical [ReactJS tutorial](https://reactjs.org/tutorial/tutorial.html).
+
+### /scotch-learn-react
+
+A simple Hello World example. Follows the [Learning React.js](https://scotch.io/tutorials/learning-react-getting-started-and-concepts) tutorial on Scotch.io.
