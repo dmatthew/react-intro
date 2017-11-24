@@ -12,3 +12,9 @@ $ npx create-react-app my-app
 $ cd my-app
 $ npm start
 ```
+
+## The Applications
+
+### my-app
+
+An interactive Tic-Tac-Toe game
