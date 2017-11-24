@@ -48,6 +48,11 @@ ol, ul {
 .game-info {
   margin-left: 20px;
 }
+
+.highlight {
+    background-color: lightgreen;
+}
+
 button.current {
     font-weight: bold;
 }
