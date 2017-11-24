@@ -8,13 +8,13 @@ Follows the [ReactJS tutorial](https://reactjs.org/tutorial/tutorial.html)
 $ vagrant ssh
 $ cd /vagrant
 $ nvm install v8.9.1
-$ npx create-react-app my-app
-$ cd my-app
+$ npx create-react-app tic-tac-toe
+$ cd tic-tac-toe
 $ npm start
 ```
 
 ## The Applications
 
-### my-app
+### /tic-tac-toe
 
 An interactive Tic-Tac-Toe game
